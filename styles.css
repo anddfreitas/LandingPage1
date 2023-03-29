@@ -1,0 +1,164 @@
+
+body{ /*Características gerais */
+    background-color: rgb(36, 36, 36);
+    font-family: Poppins;
+    color: white;
+    padding: 18px;
+    padding-top: 5px;
+    margin: 0 auto;
+    max-width: 1980px;
+}
+
+header{ /* Cabeçalho - "LOGO" e "MENU" */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#title { /* "LOGO" */
+    line-height: 0.3;
+}
+
+.menu { /* MENU GERAL */
+    font-size: 18px;
+    list-style: none;
+    display: flex;
+}
+
+.menu li { /* ESPAÇO DE ÍCONES EM LATERAL */
+    margin: 30px;
+}
+
+.menu li a { /* LINKS DO MENU */ 
+    color: white;
+    text-decoration: none;
+    padding: 7px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.menu li a:hover { /* LINKS COM MOUSE */
+    background-color: rgb(36, 36, 36);
+    border: 0.2px solid rgb(155, 6, 207);
+    border-radius: 14px;
+}
+
+main { /* CONTEUDO */
+    display: flex;
+    justify-content: space-between;
+}
+
+#subtitle { /* SUB TITULO */
+    margin-top: 8%;
+    font-weight: 700;
+    font-size: 54px;
+    line-height: 0.1;
+}
+
+.purple { /* COR ROXA DO SUBTITULO */
+    color: rgb(155, 6, 207);
+}
+
+.text { /* TEXTO PAINEL ESQUERDA */
+    font-size: 15px;
+    text-align: left;
+    max-width: 800px;
+    margin-bottom: 50px;
+    font-weight: 300;
+}
+
+input { /* Entradas de texto */
+    display: block;
+    margin-bottom: 15px;
+    outline: none;
+    height: 40px;
+    width: 350px;
+    border-radius: 15px;
+    border: none;
+    padding-left: 10px;
+    padding-top: 2px;
+}
+
+input[type=submit] { /* BOTÃO ENVIAR */
+    background-color: rgb(155, 6, 207);
+    color: white;
+    font-weight: bold;
+    border: none;
+    width: 200px;
+}
+
+input[type=submit]:hover { /* BOTÃO ENVIAR MOUSE */
+    background-color: rgb(111, 22, 143);
+}
+
+img {
+    float: right;
+    width: calc(100% - 900px);
+}
+
+
+
+@media (max-width:1000px) {
+    
+    .menu li { /* ESPAÇO DE ÍCONES EM LATERAL */
+        margin: 10px;
+    }
+
+    main { /* CONTEUDO */
+        display: inline;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    img {
+        float: left;
+        width: auto;
+    }
+}
+
+@media (max-width:826px) {
+    header {
+        display:block;
+    }
+
+    .menu {
+        font-size: 15px;
+    }
+
+    #subtitle {
+        font-size: 40px;
+    }
+
+    img {
+        float: left;
+        width: 80%;
+    }
+}
+
+@media (max-width:625px) {
+    body {
+        max-width: 625px;
+    }
+
+    .menu {
+        display: inline;
+    }
+
+    header {
+        display: block;
+    }
+
+    #subtitle {
+        font-size: 30px;
+    }
+    
+    .text {
+        font-size: 10px;
+    }
+
+    img {
+        float: left;
+        width: 60%;
+    }
+}
+
